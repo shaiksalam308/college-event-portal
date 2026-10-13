@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Navigation Bar using Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172554;
+    color: white;
+    padding: 18px 8%;
+}
+
+.navbar h2 {
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #facc15;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #facc15;
+    color: #172554;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #fde68a;
+}
+
+/* Section Headings */
+section:not(.hero) {
+    padding: 45px 8%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #172554;
+    font-size: 28px;
+}
+
+/* Categories using Flexbox */
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000012;
+    font-weight: bold;
+    text-align: center;
+    flex: 1 1 180px;
+}
+
+/* Events using CSS Grid */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #00000015;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+}
+
+.cultural {
+    background-color: #fce7f3;
+}
+
+.technical {
+    background-color: #dbeafe;
+}
+
+.sports {
+    background-color: #dcfce7;
+}
+
+.workshop {
+    background-color: #fef3c7;
+}
+
+.event-content {
+    padding: 22px;
+}
+
+.event-content h3 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.event-content p {
+    margin-bottom: 8px;
+}
+
+.event-content button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.event-content button:hover {
+    background-color: #172554;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #172554;
+    color: white;
+    padding: 25px 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    section:not(.hero) {
+        padding: 35px 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar h2 {
+        font-size: 21px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .category {
+        flex-basis: 100%;
+    }
+}

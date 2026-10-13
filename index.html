@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2>CampusEvents</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to College Event Portal</h1>
+        <p>Discover, participate, and make memories!</p>
+        <a href="#events" class="btn">Explore Events</a>
+    </section>
+
+    <!-- Event Categories -->
+    <section id="categories">
+        <h2>Event Categories</h2>
+        <div class="category-container">
+            <div class="category">🎵 Cultural</div>
+            <div class="category">💻 Technical</div>
+            <div class="category">⚽ Sports</div>
+            <div class="category">📚 Workshops</div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+
+        <div class="event-container">
+
+            <div class="event-card">
+                <div class="event-image cultural">🎤</div>
+                <div class="event-content">
+                    <h3>Annual Cultural Fest</h3>
+                    <p><strong>Date:</strong> 20 November 2026</p>
+                    <p><strong>Time:</strong> 10:00 AM</p>
+                    <p>Enjoy music, dance, and exciting performances.</p>
+                    <button onclick="registerEvent('Annual Cultural Fest')">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image technical">💻</div>
+                <div class="event-content">
+                    <h3>Tech Symposium</h3>
+                    <p><strong>Date:</strong> 25 November 2026</p>
+                    <p><strong>Time:</strong> 9:00 AM</p>
+                    <p>Explore coding, innovation, and new technologies.</p>
+                    <button onclick="registerEvent('Tech Symposium')">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image sports">🏆</div>
+                <div class="event-content">
+                    <h3>Sports Meet</h3>
+                    <p><strong>Date:</strong> 30 November 2026</p>
+                    <p><strong>Time:</strong> 8:00 AM</p>
+                    <p>Show your talent in exciting sports competitions.</p>
+                    <button onclick="registerEvent('Sports Meet')">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image workshop">📚</div>
+                <div class="event-content">
+                    <h3>Web Development Workshop</h3>
+                    <p><strong>Date:</strong> 5 December 2026</p>
+                    <p><strong>Time:</strong> 11:00 AM</p>
+                    <p>Learn HTML, CSS, and modern web development.</p>
+                    <button onclick="registerEvent('Web Development Workshop')">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 CampusEvents | College Event Management Portal</p>
+        <p>Email: events@college.edu | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function registerEvent(eventName) {
+            alert("You have selected: " + eventName +
+                  "\nRegistration feature can be connected to a database.");
+        }
+    </script>
+
+</body>
+</html>
